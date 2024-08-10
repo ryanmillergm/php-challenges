@@ -27,7 +27,22 @@ class ArraySquaredSameTest extends TestCase
 
         $a3 = [121, 144, 19, 161, 19, 144, 19, 11];
         $a4 = [11*21, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19];
-        $array_squared_same->comp($a3, $a4);
-        $this->assertEquals(false, $result);
+        $result2 = $array_squared_same->comp($a3, $a4);
+        $this->assertEquals(false, $result2);
+
+        $a5 = [46,6,57,75,59,47,69,49,32,63,14,31,31,74,41,27,56,93,19,33,42,44,77];
+        $a6 = [2116,36,3249,5625,3481,2209,4761,2401,1024,3969,196,962,961,5476,1681,729,3136,8649,361,1089,1764,1156,5929];
+        $result3 = $array_squared_same->comp($a5, $a6);
+        $this->assertEquals(false, $result3);
+
+        $a7 = array();
+        $a8 = [2116,36,3249,5625,3481,2209,4761,2401,1024,3969,196,962,961,5476,1681,729,3136,8649,361,1089,1764,1156,5929];
+        $result4 = $array_squared_same->comp($a7, $a8);
+        $this->assertEquals(false, $result4);
+
+        $a8 = null;
+        $a9 = [2116,36,3249,5625,3481,2209,4761,2401,1024,3969,196,962,961,5476,1681,729,3136,8649,361,1089,1764,1156,5929];
+        $result5 = $array_squared_same->comp($a8, $a9);
+        $this->assertEquals(false, $result5);
     }
 }
