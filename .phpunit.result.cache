@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"CalculatorTest::testAdd":0.004}}
+{"version":1,"defects":{"ArrayDiffTest::testArrayDiff":7,"ArraySquaredSameTest::testArraySquaredSame":7,"ArrayOutlierTest::testArrayOutlier":8,"ArrayOddIntTest::testFindIt":7,"ArrayListSquaredTest::testArrayListSquared":8},"times":{"CalculatorTest::testAdd":0.004,"ArrayDiffTest::testArrayDiff":0.004,"ArraySquaredSameTest::testArraySquaredSame":0.009,"ArrayOutlierTest::testArrayOutlier":0.005,"ArrayOddIntTest::testFindIt":0.053,"ArrayListSquaredTest::testArrayListSquared":0.005}}
